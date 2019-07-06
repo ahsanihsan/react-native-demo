@@ -42,6 +42,7 @@ export default class Login extends Component {
                         textContentType = "password"
                         mode = "outlined"
                         value = {this.state.password}
+                        secureTextEntry = {true}
                         onChangeText = {(value) => this.setState({ password: value })}
                     />
                     <Button mode = "contained" onPress = {() => this.handleSubmit()}>Login</Button>
